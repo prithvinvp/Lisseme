@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*  general styling    */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato',sans-serif;
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #11245A;
+    text-transform: uppercase;
+}
+
+p{
+    color: rgba(0, 0, 0, 0.493);
+}
+
+
+/*     headrer section styling    */
+.navbar{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-brand{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #11245A;
+}
+
+.navbar .nav-link{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: #E93b81;
+}
+
+
+/*     hero or introduction section styling    */
+
+#home{
+    background: linear-gradient(hsla(224, 68%, 21%, 0.712),#11245acb),url(/Assets/hero_img.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#home h1{
+    color: #11245A;
+    font-size: 60px;
+    text-align: center;
+}
+
+#home p{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.btn{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px 8px;
+    border-radius: 1px;
+}
+
+.btn-brand{
+    background-color: #E93b81;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn-brand:hover{
+    background-color: transparent;
+    border: 2px solid #E93b81;
+    border-radius: 10px;
+    color: white;
+
+}
+
+
+/*     Services Section Styling   */
+.section-intro h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #11245A;
+}
+
+.section-intro .hline{
+    width: 140px;
+    height: 3px;
+    background-color: #e93b816c;
+    margin: auto;
+    
+}
+
+
+
+/*    portfolio section design  */
+.portfolio-item{
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img,
+.portfolio-item .portfolio-overlay{
+    transition: all 0.3s ease;
+}
+
+.portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    background-color: #11245a80;
+    opacity: 0;
+}
+
+.portfolio-overlay h3
+{
+    color: white;
+}
+
+.portfolio-item:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover .portfolio-overlay{
+    opacity: 1;
+}
+
+
+/* team section design */
+.team-member{
+    background-color: #11245A;
+}
+
+.team-member.even{
+    background-color: #375199;
+}
+
+.team-member .hline{
+    width: 70px;
+    height: 2px;
+    margin: 16px auto;
+    background-color: rgba(158, 158, 158, 0.466);
+}
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons{
+    transition: all 0.3s ease;
+}
+
+.team-member .team-member-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons{
+    width: 100%;
+    height: 60px;
+    bottom: -60px;
+    position: absolute;
+    background-color: #E93b81;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member .team-member-img .social-icons a{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.team-member .team-member-img .social-icons a:hover{
+    transform: scale(1.2);
+}
+
+
+.team-member:hover img{
+    transform: translateY(-60px);
+}
+
+
+/*  Testimonials section design   */
+
+.tab-content{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    padding-bottom: 30px;
+}
+
+#testimonials img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+#testimonials button:hover{
+    transform: scale(1.5);
+}
+
+#testimonials button{
+    background-color: transparent;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+#testimonials .nav-pills .nav-link.active img{
+    transform: scale(1.5);
+}
+
+
+/*    contact section styling */
+#contact-image img{
+    height: 400px;
+    width: 500px;
+}
+
+#contact-message button{
+    background-color: #E93b81;
+    border: #E93b81;
+    border-radius: 10%;
+}
+
+#contact-message button:hover{
+    background-color: transparent;
+    border: #E93b81 solid 2px;
+    border-radius: 10%;
+    color: #E93b81;
+}
+
+
+/*   footer section styling  */
+#footer{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color:#11245A;
+    opacity: 0.75;
+}
+
+#footer .footer-content,
+#footer .footer-content h5,
+#footer .footer-content p,
+#footer .copyright p,
+#footer .footer-content a{
+    color: white;
+}
+#footer .footer-content h5{
+    font-weight: 600;
+}
+
+#footer button{
+    background-color: #E93b81;
+    border: transparent;
+}
